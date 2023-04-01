@@ -1,7 +1,6 @@
   require('dotenv').config()
   const express = require('express');
   const app = express();
-  const path = require('path');
   const {
     Configuration,
     OpenAIApi
@@ -13,7 +12,7 @@
   });
   const fs = require('fs');
 
-  bot.onText(/\/query (.+)/, (msg, body) => {
+  bot.onText(/\/q (.+)/, (msg, body) => {
 
     async function getReply(query) {
       const chatId = msg.chat.id;
@@ -45,7 +44,7 @@
     const response = await openai.createCompletion({
       model: "text-davinci-003",
       prompt: prompt,
-      temperature: 0,
+      temperature: 1.33,
       max_tokens: 150,
       top_p: 1,
       frequency_penalty: 0,
