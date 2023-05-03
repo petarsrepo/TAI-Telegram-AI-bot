@@ -1,4 +1,4 @@
-# TAI Telegram AI Bot
+# TAI Telegram AI Bot [![using with dotenv-vault](https://badge.dotenv.org/using.svg?r=1)](https://www.dotenv.org/r/github.com/motdotla/dotenv?r=1)
 
 TAI AI is back! Smarter, better, faster, stronger,  powered by the OpenAI API. Ask your question and find the answer.
 
